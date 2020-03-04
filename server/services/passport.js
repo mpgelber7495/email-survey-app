@@ -7,7 +7,6 @@ const User = mongoose.model("users");
 
 // put the info into the cookie
 passport.serializeUser((user, done) => {
-  console.log(user.id);
   done(null, user.id);
 });
 
@@ -29,7 +28,6 @@ passport.use(
       User.findOne({ googleId: profile.id }).then(existingUser => {
         if (existingUser) {
           // we already have a record with profile ID
-          console.log(existingUser);
           done(null, existingUser);
         } else {
           // we don't have a user for this googleId - create a new user
