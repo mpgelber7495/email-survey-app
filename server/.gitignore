@@ -109,3 +109,5 @@ dist
 .DS_Store
 /node_modules
 dev.js
+.env.development
+.env.production
