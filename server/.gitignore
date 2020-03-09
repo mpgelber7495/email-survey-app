@@ -110,4 +110,3 @@ dist
 /node_modules
 dev.js
 .env.development
-.env.production
