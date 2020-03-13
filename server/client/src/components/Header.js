@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import Payments from "./Payments";
+import "./css/Header.css";
 
 class Header extends Component {
   renderContent() {
@@ -31,14 +32,15 @@ class Header extends Component {
   render() {
     return (
       <nav>
-        <div className="nav-wrapper">
+        <div className="teal nav-wrapper">
           <Link
             to={this.props.auth ? "/surveys" : "/"}
             className="left brand-logo"
+            style={{ marginLeft: "4%" }}
           >
             Emaily
           </Link>
-          <ul className="right">
+          <ul className="right login-header-li">
             <li>{this.renderContent()}</li>
           </ul>
         </div>

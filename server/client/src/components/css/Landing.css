@@ -1,0 +1,21 @@
+.landing-container {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("https://i.imgur.com/A480S9I.jpg");
+
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 75%;
+}
+
+.company-name {
+  padding-top: 10%;
+}
+
+.intro-text {
+  margin: 0 auto;
+  width: 70%;
+}

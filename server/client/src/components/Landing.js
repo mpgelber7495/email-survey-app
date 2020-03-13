@@ -1,10 +1,14 @@
 import React from "react";
+import "./css/Landing.css";
 
 const Landing = () => {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1>Emaily!</h1>
-      Collect feedback from your users!
+    <div className="landing-container " style={{ textAlign: "center" }}>
+      <h1 className="company-name">Emaily!</h1>
+      <p className="intro-text ">
+        Here at Emaily you can send a list of email addresses a survey and
+        record their responses!
+      </p>
     </div>
   );
 };
